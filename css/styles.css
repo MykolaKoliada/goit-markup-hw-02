@@ -1,0 +1,148 @@
+:root {
+  --main-text-color: #2e2f42;
+  --text-color: #434455;
+  --second-text-color: #e7e9fc;
+  --accent-color: #4d5ae5;
+  --logo-light-color: #f4f4fd;
+  --background-color: #ffffff;
+  --second-background-color: #2e2f42;
+  --light-background-color: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* header */
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-dark {
+  color: var(--main-text-color);
+}
+
+.site-nav-link {
+  font-weight: 600;
+  color: var(--main-text-color);
+}
+
+.site-nav-link:focus,
+.site-nav-link:hover {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.contact-link:focus,
+.contact-link:hover {
+  color: var(--accent-color);
+}
+
+/* section hero */
+
+.hero {
+  background-color: var(--second-background-color);
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--background-color);
+}
+
+.button-hero {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+
+
+/* section feature */
+
+.feature-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+/* section work */
+
+.work-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--main-text-color);
+}
+
+/* section team  */
+
+.team {
+  background-color: var(--light-background-color);
+}
+
+.team-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--main-text-color);
+}
+
+.team-member {
+  background-color: var(--background-color);
+}
+
+.team-member-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--second-background-color);
+}
+
+.logo-light {
+  color: var(--logo-light-color);
+}
+
+.footer-text {
+  color: var(--second-text-color);
+}
