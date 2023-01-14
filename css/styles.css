@@ -7,7 +7,7 @@
   --background-color: #ffffff;
   --second-background-color: #2e2f42;
   --light-background-color: #f4f4fd;
-}
+}  
 
 body {
   font-family: "Roboto", sans-serif;
@@ -20,12 +20,30 @@ body {
   background-color: var(--background-color);
 }
 
-a {
+.decor {
   text-decoration: none;
+  list-style: none;
 }
 
-li {
-  list-style-type: none;
+/* a {
+  text-decoration: none;
+} */
+/* ul {
+  list-style: none;
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -37,6 +55,7 @@ li {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--accent-color);
 }
 
@@ -45,10 +64,12 @@ li {
 }
 
 .site-nav-link {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--main-text-color);
 }
-
+.site-nav-link.current {
+  color: var(--accent-color);
+}
 .site-nav-link:focus,
 .site-nav-link:hover {
   color: var(--accent-color);
@@ -71,7 +92,7 @@ li {
 }
 
 .hero-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   color: var(--background-color);
@@ -80,21 +101,19 @@ li {
 .button-hero {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--background-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
-
-
 /* section feature */
 
 .feature-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--main-text-color);
@@ -102,8 +121,8 @@ li {
 
 /* section work */
 
-.work-title {
-  font-weight: 600;
+.work-title, .team-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: var(--main-text-color);
@@ -115,19 +134,12 @@ li {
   background-color: var(--light-background-color);
 }
 
-.team-title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--main-text-color);
-}
-
 .team-member {
   background-color: var(--background-color);
 }
 
 .team-member-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--main-text-color);
@@ -145,4 +157,36 @@ li {
 
 .footer-text {
   color: var(--second-text-color);
+}
+
+/* portfolio.html */
+
+/* section project  */
+
+.filter-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: var(--light-background-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color:var(--background-color) ;
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.project-text {
+  color: var(--text-color);
 }
